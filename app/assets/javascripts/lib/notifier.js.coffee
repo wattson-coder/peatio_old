@@ -13,7 +13,7 @@ class Notifier
       if Notification.permission == 'default'
         @requestPermission(@checkOrRequirePermission)
       else if Notification.permission == 'denied'
-        @setStatus(false)
+        @setState(false) #@setStatus(false)
         @removeSwitch()
 
   removeSwitch: ->
@@ -42,7 +42,7 @@ class Notifier
     else
       false
 
-  notify: (title, content, logo = '/peatio-notification-logo.png') ->
+  notify: (title, content, logo = '/notification-logo.png') ->
     if @enableNotification == true || @enableNotification == "true"
 
       if window.Notification

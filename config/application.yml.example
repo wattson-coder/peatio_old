@@ -3,11 +3,11 @@ defaults: &defaults
   # sites hosts
   # session expire seconds
   # admin role account
-  URL_HOST: localhost:3000
+  URL_HOST: 192.168.1.100:3000
   URL_SCHEMA: http
   SESSION_EXPIRE: 60
-  ADMIN: 'admin@peatio.dev,admin@example.com'
-  TIMEZONE: 'Cairo'
+  ADMIN: 'admin@demo.exchange'
+  TIMEZONE: 'Central Time (US & Canada)'
 
   REDIS_URL: redis://127.0.0.1:6379
 
@@ -21,10 +21,10 @@ defaults: &defaults
   SMTP_PASSWORD: YOUR_SMTP_PASSWORD
   SMTP_AUTHENTICATION: plain # could be plain, login or cram_md5
 
-  SUPPORT_MAIL: support@peatio.dev
-  SYSTEM_MAIL_FROM: system@peatio.dev
-  SYSTEM_MAIL_TO: group@peatio.dev
-  OPERATE_MAIL_TO: support@peatio.dev
+  SUPPORT_MAIL: support@demo.exchange
+  SYSTEM_MAIL_FROM: system@demo.exchange
+  SYSTEM_MAIL_TO: group@demo.exchange
+  OPERATE_MAIL_TO: support@demo.exchange
 
   # WebSocket Streaming API settings
   # --------------------------------------------------------------
@@ -36,7 +36,7 @@ defaults: &defaults
 
   # pusher settings
   # --------------------------------------------------------------
-  # peatio dependence Pusher (http://pusher.com) service
+  # dependence Pusher (http://pusher.com) service
   # you can change your key for production environment.
   # we support development key and secret
   # uncomment below line only development or test
@@ -48,7 +48,8 @@ defaults: &defaults
   PUSHER_APP: YOUR_PUSHER_APP
   PUSHER_KEY: YOUR_PUSHER_KEY
   PUSHER_SECRET: YOUR_PUSHER_SECRET
-  PUSHER_HOST: api.pusherapp.com
+  PUSHER_HOST: api.pusher.com
+  # Careful in Host - pusher zone binding
   PUSHER_PORT: 80
   PUSHER_WS_PORT: 80
   PUSHER_WSS_PORT: 443
@@ -70,11 +71,6 @@ defaults: &defaults
   WEIBO_AUTH: off # on/off
   WEIBO_KEY: 3820920586
   WEIBO_SECRET: 2d6174dc698e86860c75d75b1e8a01c8
-
-  # chat setting
-  # --------------------------------------------------------------
-  # Do you want chat feature in your exchange ?
-  # send mail to community@peatio.com
 
 development:
   <<: *defaults

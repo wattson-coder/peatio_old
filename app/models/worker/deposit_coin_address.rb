@@ -8,11 +8,12 @@ module Worker
       return if payment_address.address.present?
 
       currency = payload[:currency]
-      if currency == 'eth'
-        address  = CoinRPC[currency].personal_newAccount("")
-        open('http://your_eth_server_ip/cgi-bin/restart.cgi')
-      else
-        address  = CoinRPC[currency].getnewaddress("payment")
+      case currency
+        when 'eth'
+          address  = CoinRPC[currency].personal_newAccount("")
+	  open('http://172.31.1.00/cgi-bin/restart.cgi') ## ETH_IP
+        else
+          address  = CoinRPC[currency].getnewaddress("payment")
       end
 
       if payment_address.update address: address

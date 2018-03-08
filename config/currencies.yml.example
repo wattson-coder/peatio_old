@@ -1,21 +1,22 @@
 - id: 1
-  key: renminbi
-  code: cny
-  symbol: "¥"
+  key: brazilianreal
+  code: usd
+  symbol: "B$"
   coin: false
   precision: 2
   assets:
     accounts:
       -
-        bank: '招商银行'
-        address: '6225 0885 6022 3501'
+        bank: 'Caixa Econômica Federal'
+        address: '37027-9'
         password: '111111'
-        tel: '95555'
+        tel: '5551991471441'
 - id: 2
   key: satoshi
   code: btc
   symbol: "฿"
   coin: true
+  precision: 4
   quick_withdraw_max: 0
   rpc: http://username:password@127.0.0.1:18332
   blockchain: https://blockchain.info/tx/#{txid}
@@ -27,7 +28,7 @@
 - id: 3
   key: ether
   code: eth
-  symbol: "฿"
+  symbol: "Ξ"
   coin: true
   precision: 4
   quick_withdraw_max: 0
@@ -38,3 +39,17 @@
     accounts:
       -
         address: 0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
+- id: 4
+  key: litecoin
+  code: ltc
+  symbol: "Ł"
+  coin: true
+  precision: 4
+  quick_withdraw_max: 0
+  rpc: http://douglasdallabrida2786:BvGV9fAwbSLuMr28QaR7BJOD@185.127.17.125:9332
+  blockchain: https://live.blockcypher.com/ltc/tx/#{txid}
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: MWUuWMjupjhmjVvxnUMWqiLBE8RtCtsoQR

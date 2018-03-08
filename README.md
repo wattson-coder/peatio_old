@@ -1,13 +1,17 @@
 An open-source crypto currency exchange
 =====================================
 
-**I'M Back**
-
-[![Code Climate](https://codeclimate.com/github/peatio/peatio.png)](https://codeclimate.com/github/peatio/peatio)
-[![Build Status](https://travis-ci.org/peatio/peatio.png?branch=master)](https://travis-ci.org/peatio/peatio)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/peatio/peatio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Peatio is a free and open-source crypto currency exchange implementation with the Rails framework and other cutting-edge technology.
+
+This branch is Apollo-IT's branch. and has USD, BTC, ETH, LTC now.
+
+Apollo-IT has already added following coins and has unlimited potential to add more coins and make great exchange.
+
+BTC, LTC, XRP, BCH, NEM, DASH, DOGE, ETC, USDT, DGB, SYS, NXS, UBQ, BTCD, VTC, PPC, LBC, VIA, NMC, POT, VRC, BLK, EXP, RADS, NEOS, XPM, FLO, PINK, RIC, BELA, XBC, DFS, GEO
+
+Apollo-IT hopes lots of love and support. 
+
+[DONATE](https://github.com/Apollo-IT/peatio#donate)
 
 
 ### Mission
@@ -93,7 +97,7 @@ You can interact with Peatio through API:
 
 Here're some API clients and/or wrappers:
 
-* [peatio-client-ruby](https://github.com/peatio/peatio-client-ruby) is the official ruby client of both HTTP/Websocket API.
+* [peatio-client-ruby](https://github.com/Apollo-IT/peatio-client-ruby) is the official ruby client of both HTTP/Websocket API.
 * [peatio-client-python by JohnnyZhao](https://github.com/JohnnyZhao/peatio-client-python) is a python client written by JohnnyZhao.
 * [peatio-client-python by czheo](https://github.com/JohnnyZhao/peatio-client-python) is a python wrapper similar to peatio-client-ruby written by czheo.
 * [peatioJavaClient](https://github.com/classic1999/peatioJavaClient.git) is a java client written by classic1999.
@@ -116,7 +120,7 @@ Peatio front-end based Bootstrap 3.0 version and Sass, and you can custom exchan
 
 Want to report a bug, request a feature, contribute or translate Peatio?
 
-* Browse our [issues](https://github.com/peatio/peatio/issues), comment on proposals, report bugs.
+* Browse our [issues](https://github.com/Apollo-IT/peatio/issues), comment on proposals, report bugs.
 * Clone the peatio repo, make some changes according to our development guidelines and issue a pull-request with your changes.
 * Anything you want to tell us please send it to [community@peatio.com](mailto:me@muhnagy.com)
 * If you need technical support or customization service, contact us: [sales@peatio.com](mailto:me@muhnagy.com)
@@ -132,9 +136,9 @@ Peatio is released under the terms of the MIT license. See [http://peatio.mit-li
 **Every satoshi of your kind donation goes into the rerunning peatio again and making it active and adding support for new features and new 
 currencies.**
 
-**Bitcoin** address [38jUu1ksNs9d9aFCK8wMPrZtkqDzJjFe5E](https://blockchain.info/address/38jUu1ksNs9d9aFCK8wMPrZtkqDzJjFe5E)
+**Bitcoin** address [1qjDTJAqyqE4QmrEuxyhJGzEP5EXsRfia](https://blockchain.info/address/1qjDTJAqyqE4QmrEuxyhJGzEP5EXsRfia)
 
-**Ethereum** address [38jUu1ksNs9d9aFCK8wMPrZtkqDzJjFe5E](https://etherscan.io/address/0x4ba2474e063aec44e23f2bf7fb9e4e2878dbab44)
+**Ethereum** address [0xF1Ca2389b52F4154A2e4e9d21D930F9b98abB5b2](https://etherscan.io/address/0xF1Ca2389b52F4154A2e4e9d21D930F9b98abB5b2)
 
 
 ### What is Peatio?

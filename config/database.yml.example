@@ -1,16 +1,16 @@
 development: &defaults
   adapter: mysql2
   encoding: utf8
-  database: peatio_development
+  database: exchange_development
   username: root
-  password:
+  password: admin
   pool: 10
   reconnect: true
 
 test:
   <<: *defaults
-  database: peatio_test
+  database: exchange_test
 
 production:
   <<: *defaults
-  database: peatio_production
+  database: exchange_production

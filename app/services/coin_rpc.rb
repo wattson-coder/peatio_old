@@ -26,6 +26,7 @@ class CoinRPC
   def handle
     raise "Not implemented"
   end
+
   class BTC < self
     def handle(name, *args)
       post_body = { 'method' => name, 'params' => args, 'id' => 'jsonrpc' }.to_json
@@ -35,6 +36,7 @@ class CoinRPC
       result.symbolize_keys! if result.is_a? Hash
       result
     end
+
     def http_post_request(post_body)
       http    = Net::HTTP.new(@uri.host, @uri.port)
       request = Net::HTTP::Post.new(@uri.request_uri)
@@ -77,10 +79,14 @@ class CoinRPC
 
     def safe_getbalance
       begin
-        (open('http://your_server_ip/cgi-bin/total.cgi').read.rstrip.to_f)
+        (open('http://172.31.1.80/cgi-bin/total.cgi').read.rstrip.to_f) ## ETH_IP
       rescue
         'N/A'
       end
     end
   end
+
+  class LTC < BTC
+  end
+
 end

@@ -2,7 +2,7 @@ module Worker
   class MemberStats < Stats
 
     def key_for(period)
-      "peatio:stats:member:#{period}"
+      "exchange:stats:member:#{period}"
     end
 
     def to_s

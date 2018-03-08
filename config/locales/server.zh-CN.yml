@@ -288,7 +288,7 @@ zh-CN:
     currency:
       btc: BTC
       cny: CNY
-      doge: DOGE
+      bch: BCH
       pts: PTS
       ltc: LTC
   currency:
@@ -307,9 +307,9 @@ zh-CN:
       code: CNY
       name: 人民币
       format: '0,0.00'
-    dogecoin:
+    bitcoincash:
       key: DOG
-      code: DOGE
+      code: BCH
       name: 狗狗币
       format: '0,0.0000'
     protoshare:
@@ -678,11 +678,16 @@ zh-CN:
         liability-proof: 资产证明
         btc-assets: BTC资产清单
         cny-assets: CNY资产清单
+        bch-assets: BCH资产清单
       liability_tabs:
         verify-btc: 验证我的BTC资产
         verify-cny: 验证我的CNY资产
+        verify-ltc: 验证我的LTC资产
+        verify-bch: 验证我的BCH资产
         btc-assets-total: '交易所BTC总资产：'
         cny-assets-total: '交易所CNY总资产：'
+        ltc-assets-total: '交易所LTC总资产：'
+        bch-assets-total: '交易所BCH总资产：'
       liability_proof:
         title: 资产证明
         intro: 我们将银行账户，比特币钱包地址，以及用户存款总额公开以便用户时刻了解我们的资产状况；我们提供的数字证明能证明我们提供的存款总额数据是真实的。我们通过技术手段来保证您的资金处于随时能够提取的状态。

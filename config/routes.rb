@@ -6,10 +6,13 @@ class ActionDispatch::Routing::Mapper
   end
 end
 
-Peatio::Application.routes.draw do
+Exchange::Application.routes.draw do
   use_doorkeeper
 
   root 'welcome#index'
+  post '/webhooks/btc' => 'webhooks#btc'
+  post '/webhooks/ltc' => 'webhooks#ltc'
+  post '/webhooks/eth' => 'webhooks#eth'
 
   if Rails.env.development?
     mount MailsViewer::Engine => '/mails'
@@ -32,7 +35,6 @@ Peatio::Application.routes.draw do
   namespace :authentications do
     resources :emails, only: [:new, :create]
     resources :identities, only: [:new, :create]
-    resource :weibo_accounts, only: [:destroy]
   end
 
   scope :constraints => { id: /[a-zA-Z0-9]{32}/ } do
@@ -118,12 +120,10 @@ Peatio::Application.routes.draw do
       end
       resources :comments, only: [:create]
     end
-
   end
-  post '/webhooks/tx' => 'webhooks#tx'
-  post '/webhooks/eth' => 'webhooks#eth'
 
   draw :admin
+
   mount APIv2::Mount => APIv2::Mount::PREFIX
 
 end

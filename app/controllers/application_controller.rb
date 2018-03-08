@@ -97,7 +97,7 @@ class ApplicationController < ActionController::Base
   end
 
   def failed_two_factor_auth_key
-    "peatio:session:#{request.ip}:failed_two_factor_auths"
+    "exchange:session:#{request.ip}:failed_two_factor_auths"
   end
 
   def increase_two_factor_auth_failed
@@ -121,7 +121,7 @@ class ApplicationController < ActionController::Base
 
     gon.pusher = {
       key:       ENV['PUSHER_KEY'],
-      wsHost:    ENV['PUSHER_HOST']      || 'ws.pusherapp.com',
+      wsHost:    'ws-us2.pusher.com', #ENV['PUSHER_HOST']      || 'ws.pusherapp.com',
       wsPort:    ENV['PUSHER_WS_PORT']   || '80',
       wssPort:   ENV['PUSHER_WSS_PORT']  || '443',
       encrypted: ENV['PUSHER_ENCRYPTED'] == 'true'
@@ -218,15 +218,15 @@ class ApplicationController < ActionController::Base
   end
 
   def save_session_key(member_id, key)
-    Rails.cache.write "peatio:sessions:#{member_id}:#{key}", 1, expire_after: ENV['SESSION_EXPIRE'].to_i.minutes
+    Rails.cache.write "exchange:sessions:#{member_id}:#{key}", 1, expire_after: ENV['SESSION_EXPIRE'].to_i.minutes
   end
 
   def clear_all_sessions(member_id)
     if redis = Rails.cache.instance_variable_get(:@data)
-      redis.keys("peatio:sessions:#{member_id}:*").each {|k| Rails.cache.delete k.split(':').last }
+      redis.keys("exchange:sessions:#{member_id}:*").each {|k| Rails.cache.delete k.split(':').last }
     end
 
-    Rails.cache.delete_matched "peatio:sessions:#{member_id}:*"
+    Rails.cache.delete_matched "exchange:sessions:#{member_id}:*"
   end
 
   def allow_iframe

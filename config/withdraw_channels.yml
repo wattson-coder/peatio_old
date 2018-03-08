@@ -1,13 +1,6 @@
-- id: 200
-  key: satoshi
-  currency: btc
-  fixed: 8
-  fee: 0.0005
-  inuse: true
-  type: WithdrawChannelSatoshi
-- id: 400
+- id: 100
   key: bank
-  currency: cny
+  currency: usd
   fixed: 2
   fee_max: 0
   min: 100
@@ -16,13 +9,30 @@
   proportion: true
   inuse: true
   type: WithdrawChannelBank
-- id: 500
+- id: 200
+  key: satoshi
+  currency: btc
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  fee: 0.0010
+  type: WithdrawChannelSatoshi
+- id: 300
+  key: litecoin
+  currency: ltc
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  fee: 0.0020
+  type: WithdrawChannelLitecoin
+- id: 400
   key: ether
   currency: eth
   min_confirm: 1
   max_confirm: 6
   inuse: true
   fixed: 8
-  fee: 0.0005
-  type: WithdrawChannelEthereum
-  
+  fee: 0.0050
+  type: WithdrawChannelEthereum  

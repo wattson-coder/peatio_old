@@ -3,7 +3,14 @@ module Withdraws
     extend ActiveSupport::Concern
 
     def set_fee
-      self.fee = "0.0001".to_d
+      case currency_obj.code
+        when "btc"
+          self.fee = "0.0001".to_d
+        when "ltc"
+          self.fee = "0.001".to_d
+        else
+          self.fee = "0.0002".to_d
+      end
     end
 
     def blockchain_url

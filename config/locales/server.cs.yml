@@ -295,7 +295,7 @@ cs:
     currency:
       btc: BTC
       cny: CNY
-      doge: DOGE
+      bch: BCH
       pts: PTS
       ltc: LTC
   currency:
@@ -314,10 +314,10 @@ cs:
       code: CNY
       name: Čínský Yuan
       format: '0,0.00'
-    dogecoin:
+    bitcoincash:
       key: DOG
-      code: DOGE
-      name: Dogecoin
+      code: BCH
+      name: Bitcoincash
       format: '0,0.0000'
     protoshare:
       key: PTS

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Peatio::Application.load_tasks
+Exchange::Application.load_tasks

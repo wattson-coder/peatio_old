@@ -154,7 +154,7 @@ we will alsp need to enable passenger in nginx config file
 
 and uncomment
 
-    include  /etc/nginx/passenger.conf;.
+    include  /etc/nginx/passenger.conf;
 
 ### 8. Install JavaScript Runtime
 
@@ -177,7 +177,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 ##### Clone the Source
 
     mkdir -p ~/peatio
-    git clone git://github.com/muhammednagy/peatio.git ~/peatio/current
+    git clone git://github.com/Apollo-IT/peatio.git ~/peatio/current
     cd peatio/current
 
     ＃ Install dependency gems

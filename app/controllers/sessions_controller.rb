@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
 
   before_action :auth_member!, only: :destroy
   before_action :auth_anybody!, only: [:new, :failure]
-  before_action :add_auth_for_weibo
 
   helper_method :require_captcha?
 
@@ -25,7 +24,7 @@ class SessionsController < ApplicationController
         clear_failed_logins
         reset_session rescue nil
         session[:member_id] = @member.id
-        save_session_key @member.id, cookies['_peatio_session']
+        save_session_key @member.id, cookies['_exchange_session']
         save_signup_history @member.id
         MemberMailer.notify_signin(@member.id).deliver if @member.activated?
         redirect_back_or_settings_page
@@ -66,18 +65,14 @@ class SessionsController < ApplicationController
   end
 
   def failed_login_key
-    "peatio:session:#{request.ip}:failed_logins"
+    "exchange:session:#{request.ip}:failed_logins"
   end
 
   def auth_hash
     @auth_hash ||= env["omniauth.auth"]
   end
 
-  def add_auth_for_weibo
-    if current_user && ENV['WEIBO_AUTH'] == "true" && auth_hash.try(:[], :provider) == 'weibo'
-      redirect_to settings_path, notice: t('.weibo_bind_success') if current_user.add_auth(auth_hash)
-    end
-  end
+
 
   def save_signup_history(member_id)
     SignupHistory.create(

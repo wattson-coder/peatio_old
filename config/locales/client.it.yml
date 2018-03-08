@@ -5,7 +5,7 @@
 
 it:
   js:
-    brand: Peatio
+    brand: Demo
     submit: Immetti
     funds:
       deposit: Deposita

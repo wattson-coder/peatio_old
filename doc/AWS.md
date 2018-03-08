@@ -4,7 +4,7 @@
 - micro instance (for bitcoind don't create now)
 - medium instance (for peatio) 
 - EBS disk with 150 GB (To download the full node)
-You should follow this steps [here](https://github.com/muhammednagy/peatio/blob/master/doc/deploy-production-server.md) to deploy Peatio ignore the bitcoind part
+You should follow this steps [here](https://github.com/Apollo-IT/peatio/blob/master/doc/deploy-production-server.md) to deploy Peatio ignore the bitcoind part
 
 ### create Bitcoind Server
 1. Login to AWS Dashboard

@@ -1,4 +1,4 @@
-Peatio::Application.configure do
+Exchange::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests.
@@ -27,7 +27,7 @@ Peatio::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -40,7 +40,7 @@ Peatio::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  config.force_ssl = true
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
@@ -55,7 +55,7 @@ Peatio::Application.configure do
   # config.cache_store = :memory_store
   config.cache_store = :redis_store, ENV['REDIS_URL']
 
-  config.session_store :redis_store, :key => '_peatio_session', :expire_after => ENV['SESSION_EXPIRE'].to_i.minutes
+  config.session_store :redis_store, :key => '_exchange_session', :expire_after => ENV['SESSION_EXPIRE'].to_i.minutes
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"

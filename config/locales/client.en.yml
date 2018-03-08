@@ -1,28 +1,16 @@
 en:
   js:
-    brand: Peatio
+    brand: Demo
     submit: Submit
     cancel: Cancel
     confirm: Confirm
     banks:
-      icbc: Industryand Commercial Bank of China
-      cbc: Construction Bank of China
-      bc: Bank of China
-      bcm: Bank of Communications
-      abc: Agriculture Bank of China
-      cmb: China Merchants Bank Ltd
-      cmbc: China Minsheng Banking Co., Ltd
-      cncb: China CITIC Bank
-      hxb: Hua Xia Bank Co., Ltd.
-      cib: Industrial Bank Co., Ltd
-      spdb: Shanghai Pudong Development Bank
-      bob: Bank of Beijing
-      ceb: China Everbright Bank CO.LTD
-      sdb: Shenzhen Development Bank
-      pab: Ping An Bank Co., Ltd.
-      gdb: Guangdong Development Bank
-      psbc: Postal Savings Bank of China
-      bos: Bank of Shanghai
+      bras: Banco do Brasil
+      brgs: Banrisul
+      bbde: Bradesco
+      cefx: Caixa Econômica Federal
+      itau: Itaú
+      abna: Santander
     fund_sources:
       manage_bank_account: Bank Account Management
       manage_bank_account_desc: To facilitate the choice of bank withdrawals address
@@ -40,8 +28,39 @@ en:
       deposit: Deposit
       withdraw: Withdraw
       currency_name:
-        cny: CNY
         btc: BTC
+        cny: CNY
+        usd: USD
+        eth: ETH
+        bch: BCH
+        ltc: LTC
+        dash: DASH
+        xrp: XRP
+        etc: ETC
+        ubq: UBQ
+        doge: DOGE
+        xem: XEM
+        flo: FLO
+        geo: GEO
+        blk: BLK
+        bela: BELA
+        lbc: LBC
+        neos: NEOS
+        nxs: NXS
+        nmc: NMC
+        sys: SYS
+        pink: PINK
+        ppc: PPC
+        pot: POT
+        vtc: VTC
+        xbc: XBC
+        xpm: XPM
+        rads: RADS
+        ric: RIC
+        dgb: DGB
+        dfs: DFS
+        btcd: BTCD
+        via: VIA
       deposit_cny:
         title: Chinese Yuan Deposit
         desc: "To deposit via Bank transfer, please follow these steps:"
@@ -62,10 +81,88 @@ en:
         to_bank_name: Bank Name
         opening_bank_name: Account where created
         remark: 'Referral Code (Transfer identification code)'
-
+      deposit_usd:
+        title: Brazilian Real Deposit
+        desc: "To deposit via Bank transfer, please follow these steps:"
+        desc_item_1: "1. Submit the form to get the identification code."
+        desc_item_2: "2. Transfer the money to exchange's bank account. Please make sure your referral code was written on the form you fill in."
+        desc_item_3: "3. Your deposit will be confirmed as soon as the money is received."
+        attention: "Attention: The name of your bank account must be the same as your account name on our site, otherwise your deposit may fail."
+        from: From
+        to: To
+        deposit_name: Your Name
+        deposit_account: Deposit Account
+        add: Add
+        manage: Manage
+        amount: Deposit Amount
+        min_amount: At least 10 Real
+        to_account: Account
+        to_name: Name
+        to_bank_name: Bank Name
+        opening_bank_name: Account where created
+        remark: 'Referral Code (Transfer identification code)'
       deposit_btc:
         title: BTC Deposit
-
+      deposit_eth:
+        title: ETH Deposit
+      deposit_bch:
+        title: BCH Deposit
+      deposit_ltc:
+        title: LTC Deposit
+      deposit_dash:
+        title: DASH Deposit
+      deposit_xrp:
+        title: XRP Deposit
+      deposit_etc:
+        title: ETC Deposit
+      deposit_ubq:
+        title: UBQ Deposit
+      deposit_doge:
+        title: DOGE Deposit
+      deposit_xem:
+        title: XEM Deposit
+      deposit_flo:
+        title: FLO Deposit
+      deposit_geo:
+        title: GEO Deposit
+      deposit_blk:
+        title: BLK Deposit
+      deposit_bela:
+        title: BELA Deposit
+      deposit_lbc:
+        title: LBC Deposit
+      deposit_neos:
+        title: NEOS Deposit
+      deposit_nxs:
+        title: NXS Deposit
+      deposit_nmc:
+        title: NMC Deposit
+      deposit_sys:
+        title: SYS Deposit
+      deposit_pink:
+        title: PINK Deposit
+      deposit_ppc:
+        title: PPC Deposit
+      deposit_pot:
+        title: POT Deposit
+      deposit_vtc:
+        title: VTC Deposit
+      deposit_xbc:
+        title: XBC Deposit
+      deposit_xpm:
+        title: XPM Deposit
+      deposit_rads:
+        title: RADS Deposit
+      deposit_ric:
+        title: RIC Deposit
+      deposit_dgb:
+        title: DGB Deposit
+      deposit_dfs:
+        title: DFS Deposit
+      deposit_btcd:
+        title: BTCD Deposit
+      deposit_via:
+        title: VIA Deposit
       deposit_coin:
         address: Address
         new_address: New Address
@@ -111,10 +208,81 @@ en:
         fee_explain: About Fee
         min: At least
         withdraw_all: Withdraw all
-
+      withdraw_usd:
+        title: Brazilian Real Withdraw
+        intro: Select the bank to cash withdrawal amount and enter the account number and complete submission.
+        intro_2: Your bank account and name must be consistent with the real-name authentication name.
+        attention: "Working Hours: 9:00 - 18:00"
+        account_name: Account Name
+        withdraw_address: Withdraw Address
+        balance: Balance
+        withdraw_amount: Withdraw Amount
+        manage_withdraw: Manage Withdraw
+        fee_explain: About Fee
+        min: At least
+        withdraw_all: Withdraw all
       withdraw_btc:
         title: BTC Withdraw
-
+      withdraw_eth:
+        title: ETH Withdraw
+      withdraw_bch:
+        title: BCH Withdraw
+      withdraw_ltc:
+        title: LTC Withdraw
+      withdraw_dash:
+        title: DASH Withdraw
+      withdraw_xrp:
+        title: XRP Withdraw
+      withdraw_etc:
+        title: ETC Withdraw
+      withdraw_ubq:
+        title: UBQ Withdraw
+      withdraw_doge:
+        title: DOGE Withdraw
+      withdraw_xem:
+        title: XEM Withdraw
+      withdraw_flo:
+        title: FLO Withdraw
+      withdraw_geo:
+        title: GEO Withdraw
+      withdraw_blk:
+        title: BLK Withdraw
+      withdraw_bela:
+        title: BELA Withdraw
+      withdraw_lbc:
+        title: LBC Withdraw
+      withdraw_neos:
+        title: NEOS Withdraw
+      withdraw_nxs:
+        title: NXS Withdraw
+      withdraw_nmc:
+        title: NMC Withdraw
+      withdraw_sys:
+        title: SYS Withdraw
+      withdraw_pink:
+        title: PINK Withdraw
+      withdraw_ppc:
+        title: PPC Withdraw
+      withdraw_pot:
+        title: POT Withdraw
+      withdraw_vtc:
+        title: VTC Withdraw
+      withdraw_xbc:
+        title: XBC Withdraw
+      withdraw_xpm:
+        title: XPM Withdraw
+      withdraw_rads:
+        title: RADS Withdraw
+      withdraw_ric:
+        title: RIC Withdraw
+      withdraw_dgb:
+        title: DGB Withdraw
+      withdraw_dfs:
+        title: DFS Withdraw
+      withdraw_btcd:
+        title: BTCD Withdraw
+      withdraw_via:
+        title: VIA Withdraw
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
         label: Label
@@ -149,7 +317,7 @@ en:
         coin_done: Coin Done
         done: Done
         almost_done: Almost Done
-        canceled: Canceld
+        canceled: Cancelled
         failed: Failed
 
     auth:
@@ -168,5 +336,7 @@ en:
       market_list:
         all: All Market
         cny: CNY Market
+        usd: USD Market
         btc: BTC Market
+        eth: ETH Market
 

@@ -1,6 +1,6 @@
-PeatioModel = @PeatioModel or require('peatio_model')
-$      = PeatioModel.$
-Model  = PeatioModel.Model
+ExchangeModel = @ExchangeModel or require('exchange_model')
+$      = ExchangeModel.$
+Model  = ExchangeModel.Model
 Queue  = $({})
 
 Ajax =
@@ -217,7 +217,7 @@ class Singleton extends Base
     (data, status, xhr) =>
 
       Ajax.disable =>
-        unless PeatioModel.isBlank(data) or @record.destroyed
+        unless ExchangeModel.isBlank(data) or @record.destroyed
           # ID change, need to do some shifting
           if data.id and @record.id isnt data.id
             @record.changeID(data.id)
@@ -282,6 +282,6 @@ Ajax.defaults   = Base::defaults
 Ajax.Base       = Base
 Ajax.Singleton  = Singleton
 Ajax.Collection = Collection
-PeatioModel.Ajax      = Ajax
+ExchangeModel.Ajax      = Ajax
 module?.exports = Ajax
 
