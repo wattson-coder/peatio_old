@@ -55,7 +55,7 @@ You must know what you're doing, there's no shortcut. Please get prepared before
 * Industry standard security out of box.
 * Active community behind.
 * Free and open-source.
-* Created and maintained by [Peatio open-source group](http://peat.io).
+* Created by [Peatio open-source group](http://peat.io) and maintained by [Apollo-IT](https://github.com/Apollo-IT).
 
 
 ### Known Exchanges using Peatio
@@ -67,7 +67,7 @@ You must know what you're doing, there's no shortcut. Please get prepared before
 
 ### Mobile Apps ###
 
-* [Boilr](https://github.com/andrefbsantos/boilr) - Cryptocurrency and bullion price alarms for Android
+* [Boilr](https://github.com/Apollo-IT/boilr) - Cryptocurrency and bullion price alarms for Android
 
 ### Requirements
 
@@ -88,6 +88,7 @@ You must know what you're doing, there's no shortcut. Please get prepared before
 * [Setup on Ubuntu](doc/setup-local-ubuntu.md)
 * [Deploy production server](doc/deploy-production-server.md)
 * [Setup Ethereum Server](doc/eth.md)
+
 ### API
 
 You can interact with Peatio through API:
@@ -98,10 +99,9 @@ You can interact with Peatio through API:
 Here're some API clients and/or wrappers:
 
 * [peatio-client-ruby](https://github.com/Apollo-IT/peatio-client-ruby) is the official ruby client of both HTTP/Websocket API.
-* [peatio-client-python by JohnnyZhao](https://github.com/JohnnyZhao/peatio-client-python) is a python client written by JohnnyZhao.
-* [peatio-client-python by czheo](https://github.com/JohnnyZhao/peatio-client-python) is a python wrapper similar to peatio-client-ruby written by czheo.
-* [peatioJavaClient](https://github.com/classic1999/peatioJavaClient.git) is a java client written by classic1999.
-* [yunbi-client-php](https://github.com/panlilu/yunbi-client-php) is a php client written by panlilu.
+* [peatio-client-python](https://github.com/Apollo-IT/peatio-client-python) is a python client written.
+* [peatioJavaClient](https://github.com/Apollo-IT/peatioJavaClient.git) is a java client written.
+* [yunbi-client-php](https://github.com/Apollo-IT/yunbi-client-php) is a php client written.
 
 ### Custom Style
 
@@ -122,8 +122,8 @@ Want to report a bug, request a feature, contribute or translate Peatio?
 
 * Browse our [issues](https://github.com/Apollo-IT/peatio/issues), comment on proposals, report bugs.
 * Clone the peatio repo, make some changes according to our development guidelines and issue a pull-request with your changes.
-* Anything you want to tell us please send it to [community@peatio.com](mailto:me@muhnagy.com)
-* If you need technical support or customization service, contact us: [sales@peatio.com](mailto:me@muhnagy.com)
+* Anything you want to tell me please send it to [apollo447722@outlook.com](mailto:apollo447722@outlook.com)
+* If you need technical support or customization service, contact me: [apollo447722@outlook.com](mailto:apollo447722@outlook.com)
 
 
 ### License
