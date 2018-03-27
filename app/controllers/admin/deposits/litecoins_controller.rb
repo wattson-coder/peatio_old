@@ -1,4 +1,3 @@
-
 module Admin
   module Deposits
     class LitecoinsController < ::Admin::Deposits::BaseController

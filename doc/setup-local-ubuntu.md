@@ -40,14 +40,16 @@ Installing [rbenv](https://github.com/sstephenson/rbenv) using a Installer
 
 Install Ruby through rbenv:
 
-    rbenv install 2.2.1
-    rbenv global 2.2.1
+    rbenv install 2.2.8
+    rbenv global 2.2.8
 
 Install bundler
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc
     gem install bundler
     rbenv rehash
+
+Refer : [Setup Ruby On Rails on Ubuntu](https://gorails.com/setup/ubuntu/16.04)
 
 ### Step 2: Install MySQL
 
