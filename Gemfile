@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 4.2.0'
 gem 'rails-i18n', '>= 4.0.9'
-
+gem 'sprockets-rails', '2.3.3'
 gem 'mysql2', '~> 0.4.0'
 gem 'daemons-rails'
 gem 'redis-rails'
