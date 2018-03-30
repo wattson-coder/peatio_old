@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  # protect_from_forgery with: :exception # upgrading
 
   helper_method :current_user, :is_admin?, :current_market, :gon
   before_action :set_timezone, :set_gon
@@ -193,8 +193,7 @@ class ApplicationController < ActionController::Base
       }
       memo
     end
-    #gon.fiat_currency = Currency.first.code
-    gon.fiat_currency = 'usd'
+    gon.fiat_currency = Currency.first.code
 
     gon.tickers = {}
     Market.all.each do |market|

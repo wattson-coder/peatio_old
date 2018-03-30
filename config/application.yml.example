@@ -5,7 +5,7 @@ defaults: &defaults
   # admin role account
   URL_HOST: 192.168.1.100:3000
   URL_SCHEMA: http
-  SESSION_EXPIRE: 60
+  SESSION_EXPIRE: '60'
   ADMIN: 'admin@demo.exchange'
   TIMEZONE: 'Central Time (US & Canada)'
 
@@ -29,7 +29,7 @@ defaults: &defaults
   # WebSocket Streaming API settings
   # --------------------------------------------------------------
   WEBSOCKET_HOST: 0.0.0.0
-  WEBSOCKET_PORT: 8080
+  WEBSOCKET_PORT: '8080'
   # Uncomment below to enable secure WebSocket (wss)
   #WEBSOCKET_SSL_KEY: 'your_server.key'
   #WEBSOCKET_SSL_CERT: 'your_server.crt'
@@ -50,9 +50,9 @@ defaults: &defaults
   PUSHER_SECRET: YOUR_PUSHER_SECRET
   PUSHER_HOST: api.pusher.com
   # Careful in Host - pusher zone binding
-  PUSHER_PORT: 80
-  PUSHER_WS_PORT: 80
-  PUSHER_WSS_PORT: 443
+  PUSHER_PORT: '80'
+  PUSHER_WS_PORT: '80'
+  PUSHER_WSS_PORT: '443'
   PUSHER_ENCRYPTED: true
 
   # twilio setting
@@ -63,14 +63,6 @@ defaults: &defaults
   TWILIO_SID: YOUR_TWILIO_SID
   TWILIO_TOKEN: YOUR_TWILIO_TOKEN
 
-
-  # Third party auth
-
-  # Weibo
-  # --------------------------------------------------------------
-  WEIBO_AUTH: off # on/off
-  WEIBO_KEY: 3820920586
-  WEIBO_SECRET: 2d6174dc698e86860c75d75b1e8a01c8
 
 development:
   <<: *defaults
