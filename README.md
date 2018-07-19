@@ -1,14 +1,22 @@
 An open-source crypto currency exchange
-(UPGRADING NOW... NEW REPOSITORY WILL BE SOON!!)
+(Moved to bitbucket.)
 =====================================
+
+[GO TO Bitbicket](https://bitbucket.org/ApolloInfoTech/cryptocurrency-exchange.git)
 
 Peatio is a free and open-source crypto currency exchange implementation with the Rails framework and other cutting-edge technology.
 
-This branch is Apollo-IT's branch. and has USD, BTC, ETH, LTC now.
+This repository is Apollo-IT's repository based on peatio.
 
 Apollo-IT has already added following coins and has unlimited potential to add more coins and make great exchange.
 
-BTC, LTC, XRP, BCH, NEM, DASH, DOGE, ETC, USDT, DGB, SYS, NXS, UBQ, BTCD, VTC, PPC, LBC, VIA, NMC, POT, VRC, BLK, EXP, RADS, NEOS, XPM, FLO, PINK, RIC, BELA, XBC, DFS, GEO
+Apollo-IT already added following coins and tokens and published exchanges.
+
+BTC based coins.
+ETH based coins.
+ERC20 tokens.
+Cryptonote based coins.
+
 
 Apollo-IT hopes lots of love and support. 
 
