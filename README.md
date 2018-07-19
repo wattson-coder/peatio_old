@@ -2,7 +2,7 @@ An open-source crypto currency exchange
 (Moved to bitbucket.)
 =====================================
 
-[GO TO Bitbicket](https://bitbucket.org/ApolloInfoTech/cryptocurrency-exchange.git)
+[GO TO Bitbucket](https://bitbucket.org/ApolloInfoTech/cryptocurrency-exchange)
 
 Peatio is a free and open-source crypto currency exchange implementation with the Rails framework and other cutting-edge technology.
 
